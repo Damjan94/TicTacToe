@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1673088795 source:/home/damjan/Projects/TicTacToe/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<SDL2/SDL.h>
+	<stdio.h>
+
