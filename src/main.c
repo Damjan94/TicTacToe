@@ -8,9 +8,13 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
 
+#include "ui/main_menu/main_menu.h"
+
 //Screen dimension constants
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
+
+struct MainMenu initMainMenu();
 
 int main()
 {
@@ -41,6 +45,8 @@ int main()
     //Update the surface
     SDL_UpdateWindowSurface( window );
 
+    struct MainMenu mainMenu = initMainMenu();
+
     //Hack to get window to stay up
     SDL_Event e;
     bool quit = false;
@@ -60,4 +66,11 @@ int main()
     //Quit SDL subsystems
     SDL_Quit();
     return 0;
+}
+
+
+struct MainMenu initMainMenu() {
+    struct MainMenu mainMenu = mainMenu_create("a fun game of tic tac toe");
+
+    return mainMenu;
 }

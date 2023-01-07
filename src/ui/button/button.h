@@ -3,15 +3,14 @@
 
 #include "../../spacial/point.h"
 
-void *Ui_ButtonOnClick();
 
 struct Ui_Button {
-        int x;
-        int y;
+        struct Point point;
         const char* text;
+        void (*onClick)();
 };
 
-Ui_Button Ui_CreateButton(const char* text);
+struct Ui_Button buttonCreate(const char* text);
 
 
 

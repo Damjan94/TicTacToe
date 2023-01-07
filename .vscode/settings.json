@@ -1,0 +1,3 @@
+{
+    "C_Cpp.default.compileCommands": "src/build/compile_commands.json"
+}
