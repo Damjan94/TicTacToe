@@ -71,7 +71,7 @@ int main(void)
 
 struct MainMenu initMainMenu(void) {
 
-    struct MainMenu mainMenu = mainMenu_create("a fun game of tic tac toe");
+    struct MainMenu mainMenu = mainMenu_create("a game of tic tac toe");
     return mainMenu;
 }
 
