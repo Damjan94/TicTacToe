@@ -7,10 +7,12 @@
 struct Ui_Button {
         struct Point point;
         const char* text;
-        void (*onClick)();
+        void (*onClick)(void);
 };
 
 struct Ui_Button buttonCreate(const char* text);
+
+struct Ui_Button buttonAddOnClickListener(const struct Ui_Button* button, void (*onClick)(void));
 
 
 

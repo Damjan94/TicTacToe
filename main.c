@@ -14,9 +14,9 @@
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
-struct MainMenu initMainMenu();
+struct MainMenu initMainMenu(void);
 
-int main()
+int main(void)
 {
         //The window we'll be rendering to
     SDL_Window* window = NULL;
@@ -69,8 +69,9 @@ int main()
 }
 
 
-struct MainMenu initMainMenu() {
-    struct MainMenu mainMenu = mainMenu_create("a fun game of tic tac toe");
+struct MainMenu initMainMenu(void) {
 
+    struct MainMenu mainMenu = mainMenu_create("a fun game of tic tac toe");
     return mainMenu;
 }
+
